@@ -11,7 +11,11 @@ module.exports = {
     loaders: [
       { test: /\.tsx?$/, loader: 'ts-loader', exclude: /node_modules/ },
       { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] },
-      { test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/, loader: 'file'}
+      { test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/, loader: 'file'},
+      { 
+        test: /bootstrap-sass\/assets\/javascripts\//,
+        loader: 'imports?jQuery=jquery' 
+      }
     ]
   }
 }
