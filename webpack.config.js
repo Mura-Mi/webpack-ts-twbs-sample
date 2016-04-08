@@ -10,7 +10,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.tsx?$/, loader: 'ts-loader' },
-      { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] }
+      { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] },
+      { test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/, loader: 'file'}
     ]
   }
 }
