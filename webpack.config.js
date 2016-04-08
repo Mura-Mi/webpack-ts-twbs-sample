@@ -5,11 +5,12 @@ module.exports = {
     path: './public/javascripts/dist'
   },
   resolve: {
-    extensions: ['', '.ts']
+    extensions: [ '', '.ts', '.scss' ]
   },
   module: {
     loaders: [
-      { test: /\.tesx?$/, loader: 'ts-loader' }
+      { test: /\.tsx?$/, loader: 'ts-loader' },
+      { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] }
     ]
   }
 }
