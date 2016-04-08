@@ -9,13 +9,14 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.tsx?$/, loader: 'ts-loader', exclude: /node_modules/ },
+      { test: /\.css$/, loaders: [ 'style', 'css' ] },
       { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] },
       { test: /\.woff2?$|\.ttf$|\.eot$|\.svg$/, loader: 'file'},
       { 
-        test: /bootstrap-sass\/assets\/javascripts\//,
+        test: /bootstrap-sass\/assets\/javascripts\bootstrap.min.js/,
         loader: 'imports?jQuery=jquery' 
-      }
+      },
+      { test: /\.tsx?$/, loader: 'ts-loader', exclude: /node_modules/ }
     ]
   }
 }
