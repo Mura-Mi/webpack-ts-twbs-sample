@@ -7,6 +7,9 @@
   "installed": {
     "node/node.d.ts": {
       "commit": "ec9eb4b28c74665a602c22db3457f0a76fa0fa23"
+    },
+    "vue/vue.d.ts": {
+      "commit": "ec9eb4b28c74665a602c22db3457f0a76fa0fa23"
     }
   }
 }
